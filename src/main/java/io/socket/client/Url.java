@@ -48,7 +48,7 @@ public class Url {
                 throw new RuntimeException(e);
             }
         }else{
-            try
+            try{
                 return new URL(protocol + "://"
                         + (userInfo != null ? userInfo + "@" : "")
                         + uri.getHost()
